@@ -1,0 +1,11 @@
+tensorflow
+numpy
+pandas
+matplotlib
+pillow
+nltk
+tqdm
+scikit-learn
+streamlit
+pydot
+graphviz
