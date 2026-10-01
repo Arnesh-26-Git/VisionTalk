@@ -8,7 +8,7 @@ from config import *
 st.set_page_config(page_title='VisionTalk',page_icon='🖼️'); st.title('🖼️ VisionTalk'); st.caption('AI Image Caption Generator — VGG16 + LSTM')
 @st.cache_resource
 def load_all():
- m=load_model(MODELS/'visiontalk_model.keras'); t=pickle.load(open(MODELS/'tokenizer.pkl','rb')); c=pickle.load(open(MODELS/'text_config.pkl','rb')); b=VGG16(weights=VGG16_WEIGHTS_PATH or 'imagenet'); e=Model(b.input,b.get_layer('fc2').output); return m,t,c,e
+ m=load_model(MODELS/'visiontalk_model.keras', compile=False); t=pickle.load(open(MODELS/'tokenizer.pkl','rb')); c=pickle.load(open(MODELS/'text_config.pkl','rb')); b=VGG16(weights=VGG16_WEIGHTS_PATH or 'imagenet'); e=Model(b.input,b.get_layer('fc2').output); return m,t,c,e
 up=st.file_uploader('Upload an image',type=['jpg','jpeg','png'])
 if up:
  im=Image.open(up).convert('RGB'); st.image(im,use_container_width=True)
