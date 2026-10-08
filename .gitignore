@@ -4,7 +4,6 @@ data/captions.txt
 
 # Trained models and generated model artifacts
 models/*.pkl
-models/*.keras
 models/checkpoints/
 models/run_config.json
 
