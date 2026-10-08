@@ -3,7 +3,7 @@
 # Pin ranges rather than exact versions so this stays installable on
 # Colab (which ships its own compatible stack) and on a fresh local machine.
 
-tensorflow>=2.16,<3.0        # brings in Keras 3 automatically
+tensorflow==2.16.2        # brings in Keras 3 automatically
 numpy>=1.26,<2.0
 pandas>=2.0
 pillow>=10.0
