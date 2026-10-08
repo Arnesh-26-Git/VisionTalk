@@ -1,0 +1,8 @@
+VisionTalk Image Captioning - Final Evaluation Metrics
+===================================================
+
+Dataset: Flickr8k
+Test Images Scored: 809
+
+BLEU-1: 0.5008008542445275
+BLEU-4: 0.1413106280716705
